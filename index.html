@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>BUILDCON</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<style>
+		.carousel-item img {
+			height: 85vh;
+			width: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+
+		.heading-text, .service-icon {
+			font-size: 4rem;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container">
+			<a class="navbar-brand fs-1 text-danger" href="#">Travello</a><button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#book">Book</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#packages">Packages</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#portfolio">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#gallary">Gallary</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" href="#about">About</a>
+					</li>
+					<a class="nav-item btn btn-outline-danger m-auto mx-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Connect with us</a>
+
+				</ul>
+                <form class="d-flex mx-2" role="search">
+                    <input class="form-control me-2 rounded" type="search" required placeholder="Search a destination..." aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                  </form>
+			</div>
+		</div>
+	</nav>
+
+	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+		<div class="carousel-indicators">
+			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img alt="..." class="" src="data/heading1.avif">
+				<div class="carousel-caption">
+                    <hr class="w-50 m-auto my-4" />
+					<h5 class=" heading-text">Discover Hidden Wonders</h5>
+                    <hr class="w-50 m-auto my-4" />
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="..." class="" src="data/heading2.avif">
+				<div class="carousel-caption">
+                    <hr class="w-50 m-auto my-4" />
+					<h5 class=" heading-text">Embark on Adventure</h5>
+                    <hr class="w-50 m-auto my-4" />
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="..." class="" src="data/heading3.avif">
+				<div class="carousel-caption">
+                    <hr class="w-50 m-auto my-4" />
+					<h5 class=" heading-text">Journey to Unforgettable Moments</h5>
+                    <hr class="w-50 m-auto my-4" />
+				</div>
+			</div>
+		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+	</div>
+    
+	<section class="about section-padding py-6 my-6 m-auto pt-5" id="book">
+		<div class="container">
+			<div class="row">
+                <div class="col-12 col-lg-4 col-md-4 mb-5 text-center m-auto">
+                    <img class="img-thumbnail" style="width: 400px; height: 400px; object-fit: cover;" src="data/form.avif" alt="">
+                </div>
+                <form class="col-12 col-md-8 col-lg-8 col-6 m-auto m-auto gap-3">
+					<div class="row">
+						<div class="col-6 my-2">
+							<label for="inputName" class="form-label">First Name</label>
+							<input
+							type="text "
+							required
+							class="form-control"
+							id="inputName"
+							/>
+						</div>
+						<div class="col-6 my-2">
+							<label for="inputName-1" class="form-label">Last Name</label>
+							<input
+							type="text "
+							required
+							class="form-control"
+							id="inputName-1"
+							/>
+						</div>
+						<div class="col-12 col-md-6 my-2">
+							<label for="inputEmail4" class="form-label">Email</label>
+							<input
+							type="email"
+							required
+							class="form-control"
+							id="inputEmail4"
+							/>
+						</div>
+						<div class="col-12 col-md-6 my-2">
+							<label for="phn" class="form-label">Phone Number</label>
+							<input type="tel" required class="form-control" id="phn" />
+						</div>
+						<div class="col-12 col-md-6 my-2">
+							<label for="inputCity" class="form-label">Number of people</label>
+							<input type="number" value="1" class="form-control" id="inputCity" />
+						</div>
+						<div class="col-12 col-md-6 my-2">
+							<label for="inputState" class="form-label">State</label>
+							<select id="inputState" required class="form-select">
+								<option selected>select...</option>
+								<option>Netherlands Adventure</option>
+								<option>Italian Riviera Retreat</option>
+								<option>Vietnam Discover</option>
+								<option>Incredible India</option>
+								<option>Tokyo Escapeokyo</option>
+								<option>Turkish Delights</option>
+							</select>
+						</div>
+						<div class="col-12 align-self-center">
+							<button type="submit" class=" btn btn-danger my-4">
+								Submit
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+    
+	<section class="services section-padding my-5 bg-danger py-5" id="packages">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-3">
+						<h2 class="fs-1 text-white">Packages</h2>
+                        <hr class="w-25 m-auto my-4 bg-white" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-4 mb-3">
+					<div class="card text-white text-center bg-light shadow-lg">
+						<div class="card-body">
+							<h3 class="card-title text-dark fs-4 h2">Netherlands Adventure </h3>
+                            <img src="data/Netherlands.avif" class="my-3 img-thumbnail" style="width: 350px; height: 230px; object-fit: cover;" alt="">
+							<div class="row">
+								<div class="col">
+								  <div class="collapse multi-collapse" id="multiCollapseExample1">
+									<div class="card-body text-dark bg-light">
+										Explore the picturesque landscapes and vibrant cities of the Netherlands. From iconic windmills to historic canals, embark on a journey filled with culture and charm.
+									</div>
+									<p class="text-dark fs-3">$2,199</p>
+								  </div>
+								</div>
+							</div>
+							<p class="d-inline-flex">
+								<a class="text-danger text-decoration-none" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">View details</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-light shadow-lg">
+                        <div class="card-body">
+							<h3 class="card-title text-dark fs-4 h2">Italian Riviera Retreat</h3>
+                            <img src="data/Italy.avif" class="my-3 img-thumbnail" style="width: 350px; height: 230px; object-fit: cover;" alt="">
+							<div class="row">
+								<div class="col">
+								  <div class="collapse multi-collapse" id="multiCollapseExample2">
+									<div class="card-body text-dark bg-light">
+										Indulge in the romance of the Italian Riviera. Immerse yourself in the beauty of coastal towns, savor exquisite cuisine, and bask in the Mediterranean sun.
+									</div>
+									<p class="text-dark fs-3">$1,499</p>
+								  </div>
+								</div>
+							</div>
+							<p class="d-inline-flex">
+								<a class="text-danger text-decoration-none" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">View details</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-light shadow-lg">
+                        <div class="card-body">
+							<h3 class="card-title text-dark fs-4 h2">Vietnam Discovery </h3>
+                            <img src="data/Vietnam .avif" class="my-3 img-thumbnail" style="width: 350px; height: 230px; object-fit: cover;" alt="">
+							<div class="row">
+								<div class="col">
+								  <div class="collapse multi-collapse" id="multiCollapseExample3">
+									<div class="card-body text-dark bg-light">
+										Uncover the rich history and breathtaking landscapes of Vietnam. From bustling markets to serene rice paddies, experience the diverse beauty and vibrant culture of this Southeast Asian gem.
+									</div>
+									<p class="text-dark fs-3">$1,899</p>
+								  </div>
+								</div>
+							</div>
+							<p class="d-inline-flex">
+								<a class="text-danger text-decoration-none" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">View details</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-4 mb-3">
+					<div class="card text-white text-center bg-light shadow-lg">
+						<div class="card-body">
+							<h3 class="text-dark fs-4 h2">Incredible India </h3>
+                            <img src="data/india.avif" class="my-3 img-thumbnail" style="width: 350px; height: 230px; object-fit: cover;" alt="">
+							<div class="row">
+								<div class="col">
+								  <div class="collapse multi-collapse" id="multiCollapseExample4">
+									<div class="card-body text-dark bg-light">
+										Embark on an enchanting journey through India's kaleidoscope of colors and traditions. Witness ancient landmarks, vibrant festivals, and the warm hospitality that defines this captivating nation.
+									</div>
+									<p class="text-dark fs-3">$1,299</p>
+								  </div>
+								</div>
+							</div>
+							<p class="d-inline-flex">
+								<a class="text-danger text-decoration-none" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">View details</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-light shadow-lg">
+                        <div class="card-body">
+							<h3 class="text-dark fs-4 h2">Tokyo Escapeokyo</h3>
+                            <img src="data/tokyo.avif" class="my-3 img-thumbnail" style="width: 350px; height: 230px; object-fit: cover;" alt="">
+							<div class="row">
+								<div class="col">
+								  <div class="collapse multi-collapse" id="multiCollapseExample5">
+									<div class="card-body text-dark bg-light">
+										Dive into the futuristic charm of Tokyo. From bustling street markets to high-tech wonders, experience the perfect blend of tradition and modernity in Japan's vibrant capital.
+									</div>
+									<p class="text-dark fs-3">$1,699</p>
+								  </div>
+								</div>
+							</div>
+							<p class="d-inline-flex">
+								<a class="text-danger text-decoration-none" data-bs-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample5">View details</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4 mb-3">
+                    <div class="card text-white text-center bg-light shadow-lg">
+                        <div class="card-body">
+							<h3 class="text-dark fs-4 h2">Turkish Delights</h3>
+                            <img src="data/Turkiye.avif" class="my-3 img-thumbnail" style="width: 350px; height: 230px; object-fit: cover;" alt="">
+							<div class="row">
+								<div class="col">
+								  <div class="collapse multi-collapse" id="multiCollapseExample6">
+									<div class="card-body text-dark bg-light">
+										Discover the magic of Turkey, where East meets West. Traverse ancient bazaars, marvel at historic mosques, and indulge in the rich flavors of Turkish cuisine. From the stunning landscapes of Cappadocia to the vibrant streets of Istanbul, this expedition promises a captivating journey through the crossroads of civilizations.
+									</div>
+									<p class="text-dark fs-3">$1,399</p>
+								  </div>
+								</div>
+							</div>
+							<p class="d-inline-flex">
+								<a class="text-danger text-decoration-none" data-bs-toggle="collapse" href="#multiCollapseExample6" role="button" aria-expanded="false" aria-controls="multiCollapseExample6">View details</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    
+	<section class="portfolio section-padding my-5 " id="portfolio">
+		<div class="container">
+			<div class="row mx-auto">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-3">
+						<h2 class="fs-1">Services</h2>
+                        <hr class="w-25 m-auto my-4 bg-warning"/>
+					</div>
+				</div>
+			</div>
+			<div class="row my-2">
+				<div class="col-12 col-md-12 col-lg-4 py-2">
+					<div class="card text-light text-center bg-white pb-2 shadow-lg">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/b-5.avif"></div>
+							<h3 class="card-title service-icon"><i class="fa-solid fa-utensils"></i></h3>
+							<h2>Comfortable Hotels</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4 py-2">
+					<div class="card text-light text-center bg-white pb-2 shadow-lg">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4 "><img alt="" class="img-fluid" src="img/b-6.avif"></div>
+							<h3 class="card-title service-icon"><i class="fa-solid fa-hotel"></i></h3>
+							<h2> Delightful dinners</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4 py-2">
+					<div class="card text-light text-center bg-white pb-2 shadow-lg">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/b-4.avif"></div>
+							<h3 class="card-title service-icon"><i class="fa-regular fa-user"></i></h3>
+							<h2>Helping Guides</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row my-2 mx-auto">
+				<div class="col-12 col-md-12 col-lg-4 py-2">
+					<div class="card text-light text-center bg-white pb-2 shadow-lg">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/b-5.avif"></div>
+							<h3 class="card-title service-icon service-icon"><i class="fa-solid fa-earth-americas"></i></h3>
+							<h2>Beautiful Locations</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4 py-2">
+					<div class="card text-light text-center bg-white pb-2 shadow-lg">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/b-6.avif"></div>
+							<h3 class="card-title service-icon"><i class="fa-regular fa-paper-plane"></i></h3>
+							<h2>Easy Travel</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4 py-2">
+					<div class="card text-light text-center bg-white pb-2 shadow-lg">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/b-4.avif"></div>
+							<h3 class="card-title service-icon"><i class="fa-solid fa-person-hiking"></i></h3>
+							<h2>Adventure Tours</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="team section-padding my-5 py-5 bg-light" id="gallary">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-4">
+						<h2 class="fs-1">Gallary</h2>
+                        <hr class="w-25 m-auto my-4 bg-warning" />
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4 mb-4">
+					<img src="data/g1.avif" alt="" class="img-thumbnail shadow" style="width: 100%; height: 230px; object-fit: cover; object-position:center">
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-4">
+					<img src="data/g2.avif" alt="" class="img-thumbnail shadow" style="width: 100%; height: 230px; object-fit: cover; object-position: 100% 20%">
+				</div>
+				<div class="col-12 cl-md-6 col-lg-4 mb-4">
+					<img src="data/g3.avif" alt=" class="img-thumbnail shadow"" style="width: 100%; height: 230px; object-fit: cover; object-position:bottom">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4 mb-4">
+					<img src="data/g4.avif" alt="" class="img-thumbnail shadow" style="width: 100%; height: 230px; object-fit: cover; object-position:center">
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-4">
+					<img src="data/g5.avif" alt="" class="img-thumbnail shadow" style="width: 100%; height: 230px; object-fit: cover; object-position:100% 80%">
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-4">
+					<img src="data/g6.avif" alt="" class="img-thumbnail shadow" style="width: 100%; height: 230px; object-fit: cover; object-position:bottom">
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <section class="contact" id="about">
+        <div class="container">
+			<div class="text-center mt-2 contact-heading">
+				<h1 class="fs-1">About us</h1>
+				<hr class="w-25 m-auto bg-warning" />
+			</div>
+            <div class="row my-5">
+				<img src="data/office.avif" class="col-12 my-4 col-lg-3 img-thumbnail shadow"  alt="">
+				<div class="col-12 col-lg-8 m-auto">
+					<p class="fs-5 text-center text-md-start">Travello, an innovative travel company, beckons explorers to a world where every journey becomes an unforgettable adventure. With a commitment to curate extraordinary experiences, Travello crafts seamless itineraries that blend cultural immersion, natural wonders, and luxurious accommodations. Our passion lies in transforming wanderlust into reality, offering meticulously designed tours that cater to the diverse interests and desires of modern travelers. From the historic streets of Italy to the vibrant markets of Vietnam, Travello invites you to embark on a voyage where every moment is a celebration of discovery and joy.</p>
+					<button href="" class="btn btn-danger w-100"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Connect with us</button>
+				</div>
+			</div>
+        </div>
+    </section>
+
+	<footer class="bg-danger text-center">
+		<p class="text-white py-3 m-0">All Right Reserved By Travello</p>
+	</footer>
+  
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+	  <div class="modal-content p-3">
+		<div class="modal-header">
+			<h2>Connect with us</h2>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="m-auto">
+			<div class="modal-body fs-5 col-12 col-md-6px-5 m-auto">
+				<i class="fa-brands fa-instagram service-icon px-3 btn"></i>
+				<i class="fa-brands fa-facebook service-icon px-3 btn"></i>
+				<i class="fa-brands fa-x-twitter service-icon px-3 btn"></i>
+			</div>
+			<div class="modal-body fs-5 col-12 col-md6 px-5 m-auto">
+				<i class="fa-brands fa-pinterest service-icon px-3 btn"></i>
+				<i class="fa-brands fa-snapchat service-icon px-3 btn"></i>
+			</div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9317aadbca.js" crossorigin="anonymous"></script>
+</body>
+</html>
